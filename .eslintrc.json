@@ -14,7 +14,8 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "tailwindcss"
+    "tailwindcss",
+    "import"
   ],
   "overrides": [
     {
@@ -25,5 +26,8 @@
       ],
       "parser": "@typescript-eslint/parser"
     }
-  ]
+  ],
+  "rules": {
+    "tailwindcss/no-custom-classname": "off"
+  }
 }

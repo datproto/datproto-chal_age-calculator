@@ -10,5 +10,21 @@ body {
 }
 
 body {
-  @apply font-cal bg-cal-gray-light
+  @apply font-cal bg-cal-gray-light flex items-center justify-center
+}
+
+.heading {
+  &_s {
+    @apply text-sm tracking-[.25rem]
+  }
+
+  &_m {
+    @apply text-xl lg:text-[2rem]
+  }
+
+  &_l {
+    @apply text-5xl lg:text-[8.5rem] font-extrabold italic leading-[1.05]
+  }
+
+  @apply font-bold
 }
