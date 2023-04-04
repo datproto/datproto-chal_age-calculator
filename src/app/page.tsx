@@ -62,7 +62,8 @@ export default function Home() {
     assertIsFormFieldElement(month);
     assertIsFormFieldElement(year);
 
-    const url = `http://192.168.2.102:3000/api/diff?day=${day.value}&month=${month.value}&year=${year.value}`;
+    const host = 'https://datproto-chal-age-calculator.vercel.app/';
+    const url = `${host}/api/diff?day=${day.value}&month=${month.value}&year=${year.value}`;
 
     axios.get(url)
       .then(res => {
