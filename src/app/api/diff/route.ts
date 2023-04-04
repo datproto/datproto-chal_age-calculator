@@ -16,5 +16,5 @@ export async function GET(request: NextRequest) {
   // @ts-ignore
   const different = moment.preciseDiff(passedDate, today, true);
 
-  return NextResponse.json({ message: 'Hello, Next.js!', different });
+  return NextResponse.json({ different });
 }
